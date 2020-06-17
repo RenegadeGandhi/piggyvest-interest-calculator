@@ -1,4 +1,4 @@
-const calc = document.querySelector(".calc");
+
 const principal = document.querySelector("#principal");
 const time = document.querySelector("#time");
 
@@ -21,14 +21,7 @@ function compute_interest() {
  
 	amt = amount_interest.toFixed(2);
 	display = Commas(amt);
-	results ="Amount to be paid is  " + amt+".";
+	results ="Amount to be paid is  " + display +".";
  	
 	document.getElementById("demo").innerHTML = results;
  }
-
-$('#calc').click(function(e){
-   e.preventDefault();
-   // Code goes here
-	compute_interest(); // your onclick function call here
-
-});
